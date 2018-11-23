@@ -1,1 +1,1 @@
-# Face-Recognition-API
+# Face Recognition Detection API
