@@ -5,7 +5,7 @@ import string
 import random
 
 face_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_default.xml')
-
+folder_data_traning = "alan-wieilly/"
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read("./recognizers/face-trainner.yml")
@@ -50,7 +50,7 @@ while(True):
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
     if cv2.waitKey(20) & 0xFF == ord('w'):
-    	img_item = "F:/FUNDAMENTOS/images//"+random.choice(string.letters)+".png"
+    	img_item = "F:/FUNDAMENTOS/images/" + folder_data + random.choice(string.letters) + ".png"
     	#img_item = "a.png"
     	cv2.imwrite(img_item,roi_color)
 
